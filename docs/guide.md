@@ -1,19 +1,10 @@
-# Installation et Guide d'Usage
+# Guide d'Installation et Déploiement
 
-Ce guide détaille les étapes nécessaires pour déployer et exécuter la plateforme ANRAC en environnement de développement local.
+Ce guide détaille le protocole technique pour déployer l'application localement sur votre environnement de travail.
 
-## Prérequis Systèmes
+## Étape 1 : Clonage du Dépôt Git
+Commencez par récupérer l'intégralité du code source depuis le dépôt sécurisé GitHub en exécutant la commande suivante dans votre terminal :
 
-Avant de commencer, assurez-vous d'avoir installé sur votre machine :
-* **Python 3.8** ou une version ultérieure.
-* Le gestionnaire de version **Git**.
-
----
-
-##  Procédure d'Installation
-
-### 1. Clonage du Projet
-Pour récupérer l'intégralité du code source sur votre machine locale, ouvrez votre terminal et exécutez :
 ```bash
 git clone [https://github.com/Chakirel1/Projet_ANRAC.git](https://github.com/Chakirel1/Projet_ANRAC.git)
 cd Projet_ANRAC

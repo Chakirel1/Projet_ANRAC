@@ -36,5 +36,4 @@ markdown_extensions:
 nav:
   - Accueil: index.md
   - Guide d'Installation: guide.md
-  - Fonctionnalités UI: UI_features.md
   - Architecture Technique: technical_reference.md
