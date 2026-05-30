@@ -1,16 +1,15 @@
-# Configuration pour Read the Docs
 version: 2
 
 build:
-  os: ubuntu-24.04
+  os: ubuntu-22.04
   tools:
     python: "3.11"
 
-# On lui indique qu'on utilise MkDocs et notre fichier mkdocs.yml
+# On indique explicitement à Read the Docs d'utiliser MkDocs
 mkdocs:
   configuration: mkdocs.yml
 
-# On installe le thème material pour qu'il puisse compiler proprement
+# On lui dit d'installer le thème Material avant de compiler
 python:
   install:
-    - requirements: docs/requirements.txt
+    - requirements: requirements.txt
