@@ -1,0 +1,72 @@
+# ==========================================
+# ENVIRONNEMENTS VIRTUELS & DEPENDANCES
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+develop-eggs/
+downloads/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# CACHES PYTHON & TESTS
+# ==========================================
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# CONFIGURATIONS IDE (VS Code, PyCharm...)
+# ==========================================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# SÉCURITÉ & SECRETS (TRÈS IMPORTANT)
+# ==========================================
+.streamlit/secrets.toml
+.env
+.secrets
+*.pem
+*.key
+
+# ==========================================
+# DONNÉES ET IMAGES (SATELLITE / RÉSULTATS)
+# ==========================================
+# On ignore les fichiers de données lourds pour ne pas surcharger Git
+data/*.tif
+data/*.npz
+data/*.png
+*.tif
+*.npz
+*.png
+
+# ==========================================
+# SYSTÈME
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
