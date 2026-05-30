@@ -1,6 +1,4 @@
-site_name: Projet ANRAC - Télédétection
-site_description: Plateforme d'analyse d'images satellites et de diagnostic de visualisation
-
+site_name: Plateforme de Télédétection - ANRAC
 theme:
   name: material
   language: fr
@@ -26,11 +24,12 @@ theme:
 
 nav:
   - Accueil: index.md
-  - Installation et Guide d'usage: guide.md
-
+  - Guide d'Installation: guide.md
+  - Fonctionnalités UI: UI_features.md
+  - Architecture Technique: technical_reference.md
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
