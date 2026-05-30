@@ -9,27 +9,31 @@ theme:
       accent: green
       toggle:
         icon: material/weather-sunny
-        name: Passer au mode sombre
+        name: Mode sombre
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: green
       toggle:
         icon: material/weather-night
-        name: Passer au mode clair
+        name: Mode clair
   features:
     - navigation.tabs
     - navigation.sections
     - content.code.copy
 
-nav:
-  - Accueil: index.md
-  - Guide d'Installation: guide.md
-  - Fonctionnalités UI: UI_features.md
-  - Architecture Technique: technical_reference.md
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+
+nav:
+  - Accueil: index.md
+  - Guide d'Installation: guide.md
+  - Fonctionnalités UI: UI_features.md
+  - Architecture Technique: technical_reference.md
