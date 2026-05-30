@@ -1,0 +1,36 @@
+site_name: Projet ANRAC - Télédétection
+site_description: Plateforme d'analyse d'images satellites et de diagnostic de visualisation
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: green
+      toggle:
+        icon: material/weather-sunny
+        name: Passer au mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Passer au mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+nav:
+  - Accueil: index.md
+  - Installation et Guide d'usage: guide.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
