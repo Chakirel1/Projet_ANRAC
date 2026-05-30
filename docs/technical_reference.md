@@ -23,16 +23,14 @@ Ce module constitue le cœur computationnel indépendant de l'application. Total
 
 ## Schéma du Flux de Données
 
-Le diagramme suivant illustre le cycle de vie d'une requête, depuis l'action utilisateur jusqu'au rendu cartographique final, en mettant en évidence le mécanisme de bascule de sécurité :
+Le diagramme suivant illustre le cycle de vie d'une requête, depuis l'action utilisateur jusqu'au rendu cartographique final :
 
 ```mermaid
 graph TD
     A[Opérateur / Utilisateur] -->|Définit BBox, Date & Cloud Cover| B(Couche Présentation : app.py)
     B -->|Transmet les hyperparamètres| C{Contrôle de connectivité API}
-    C -->|Flux Nominal| D[core_processing.py : Requête Sentinel Hub API]
-    C -->|Flux Dégradé / Exception| E[core_processing.py : Fallback Mock Data Local]
-    D -->|Extraction Matrice Image| F[Pipeline de Traitement & Alignement Pandas/NumPy]
-    E -->|Simulation Matrice| F
+    C -->|Flux Nominal| D[core_processing.py : Requête Sentinel Hub API] -->|Extraction Matrice Image| F[Pipeline de Traitement & Alignement Pandas/NumPy]
+    C -->|Flux Dégradé / Exception| E[core_processing.py : Fallback Mock Data Local] -->|Simulation Matrice| F
     F -->|Génération de la Couche Raster| G[Moteur Cartographique : Folium Object]
     G -->|Injection Dynamique| B
     B -->|Affichage Fluide| A

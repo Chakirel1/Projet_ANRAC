@@ -17,6 +17,7 @@ L'outil répond à des impératifs opérationnels et académiques précis :
 2. **Optimisation du Contrôle de Conformité** : Faciliter la détection des limites de parcelles (Bounding Boxes) et assurer l'adéquation entre les autorisations accordées et la réalité du terrain.
 3. **Démocratisation de la Télédétection** : Masquer la complexité des requêtes API brutes envoyées aux constellations satellites en proposant une interface de visualisation épurée et interactive.
 4. **Fiabilité Institutionnelle** : Garantir la continuité des audits et des démonstrations grâce à un système résilient, capable de simuler des scénarios locaux même en cas de rupture de flux de données externes.
+
 ## Architecture du Code Source
 
 Le projet adopte une architecture logicielle modulaire et hautement découplée :
